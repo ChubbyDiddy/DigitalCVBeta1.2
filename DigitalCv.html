@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Digital CV Resume</title>
+    </head>
+    <body>
+        <header>
+        <!--Profile Picture-->
+            <img src="photo.jpeg" alt="Profile Picture" width="300">
+            <!--height will be adjusted automatically to maintain the original aspect ratio-->
+            <!--might add a nav bar later TBD -->
+        </header>
+
+        <main>
+        <section class="contact-info">
+            <h1>Brandon Huntley</h1>
+            <p>Email:<a href="mailto:brandonhuntley902@gmail.com">brandonhuntley902@gmail.com</a></p>
+            <p>Phone: (913)-339-8324</p>
+        </section>
+        
+        <section class="summary">
+        <!--A brief summary about me-->
+        <h2>About me</h2>
+        <p>I am a dedicated and passionate individual with a strong interest in technology and software development. I enjoy continuously learning new tools, frameworks, and programming concepts, and I thrive on solving problems and taking on challenges that encourage growth. I am highly motivated to develop efficient, scalable solutions and to continuously improve my skills while contributing to innovative, fast-paced tech teams.</p>
+
+        <h2>Education</h2>
+        <ul>
+            <li>Springboard - Software Development Career Track, Jan 05th-May 13th</li>
+            <li>Associates of Science - Pratt Community College, 2016-2018</li>
+            <li>High School Diploma - Olathe North High school, 2012-2016</li>
+        </ul>
+        </section>
+
+        <section class="skills">
+        <h2>Technologies</h2>
+        <h3>Web development</h3>
+        <!-- I am just copying from the template as I assume that we will be learning all of what was listed on there-->
+            <ul>
+                <li>HTML & CSS</li>
+                <li>JavaScript</li>
+                <li>DOM Manipulation using vanilla JavaSCript and jQuery</li>
+                <li>Node.js & Express</li>
+                <li>Python & Flask</li>
+                <li>React & redux</li>
+            </ul>
+
+        <h3>Databases</h3>
+            <ul>
+                <li>SQL</li>
+                <li>PostgreSQL</li>
+                <li>Node-pg & SQLAlchemy</li>
+            </ul>
+        
+        <h3>Testing</h3>
+            <ul>
+                <li>Unit Testing with Jest</li>
+                <li>Integration Testing with Supertest</li>
+                <li>End-to-End Testing with Cypress</li>
+            </ul>
+
+        <h3>Other Tools & Skills</h3>
+            <ul>
+                <li>Git & GitHub</li>
+                <li>Agile Methodologies & Scrum</li>
+                <li>RESTful API Design</li>
+                <li>Problem-Solving & Debugging</li>
+            </ul>
+        </section>
+
+        <section class="tools">
+        <h3>Tools</h3>
+        <table>
+            <!--table of tools used with description and experience level with said tool-->
+            <tr>
+                <th>Tool</th>
+                <th>Description</th>
+                <th>Proficiency Level</th>
+            </tr>
+            <tr><td>Visual Studio Code</td>
+                <td>A free source code editor made by Microsoft for Windows, macOS, and Linux</td>
+                <td>Intermediate</td>
+            </tr>
+            <tr><td>Git & GitHub</td>
+                <td>A distributed version control system for tracking changes in files and coordinating work among multiple developers</td>
+                <td>Beginner</td>
+            </tr>
+            <tr><td>Postman</td>
+                <td>A collaboration platform for API development and testing</td>
+                <td>Beginner</td>
+            </tr>
+            <tr><td>Slack</td>
+                <td>A collaboration platform for team communication and project management</td>
+                <td>Expert</td>
+            </tr>
+        </table>
+        </section>
+
+        <h2>Achievements</h2>
+            <ul>
+                <li>Completed Springboard's Software Development Career Track, gaining hands-on experience in full-stack web development and building a portfolio of projects.</li>
+                <li>Developed several personal projects showcasing skills in front-end and back-end development, including a task management app and a blog platform.</li>
+                <li>Collaborated with peers on group projects, enhancing teamwork and communication skills in a software development context.</li>
+            </ul>
+        <h2>Projects</h2>
+            <p>Always eager to learn, build, and evolve. Stay tuned as I continue to grow, take on new challenges, and turn ideas into impactful solutions. More projects and innovations are on the way!</p>
+        
+        
+        <!--Contact Me made with differnt types of forms from simple to advance uses-->
+        <h2>Contact Me</h2>
+        <form action="#" method="POST">
+                <div class="form-group">
+                    <label>
+                        Name:
+                        <input type="text" name="name" placeholder="John Doe">
+                    </label>
+                </div>
+
+                <div class="form-group">
+                    <label>
+                        Email:
+                        <input type="email" name="email" placeholder="JohnDoe@example.com" required>
+                    </label>
+                </div>
+
+                <div class="form-group">
+                    <label>
+                        Company:
+                        <input type="text" name="organization" placeholder="Company Inc.">
+                    </label>
+                </div>
+
+                <div class="form-group">
+                    <label>
+                        Current Role: 
+                        <!--just thought this made more sense as i was getting confused of if they werew putting their role in or the role being offered-->
+                        <input type="text" name="role" placeholder="Software Engineer">
+                    </label>
+                </div>
+
+                <div class="form-group">
+                    <label>
+                        Reason for Contact:
+                        <select name="reason-for-contact">
+                            <option value="">--Please Choose an Option--</option>
+                            <option value="Job opportunity">Job offer</option>
+                            <option value="Freelance project">Freelance project</option>
+                            <option value="Networking">Networking</option>
+                            <option value="interview">Interview</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </label>
+                </div>
+                
+                <div class="form-group">
+                    <p>When do you prefer to code</p>
+                    <!--just a question if they want to awnser little giggle-->
+                    <input type="radio" name="coding-time" value="morning"> Morning<br>
+                    <input type="radio" name="coding-time" value="afternoon"> Afternoon<br>
+                    <input type="radio" name="coding-time" value="evening"> Evening<br>
+                    <input type="radio" name="coding-time" value="night"> Night<br>
+                </div>
+
+                <div class="form-group">
+                    <label>
+                        Message:
+                        <textarea name="message" rows="5" cols="30" placeholder="Describe Your Company or Idea In A Paragraph"></textarea>
+                    </label>
+                </div>
+
+                <div class="form-group">
+                    <button type="reset">Clear</button>
+                    <!--my favorite part so far because i had to figure out how to make a clear button by using type="reset" just amazing-->
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+        </main>
+
+        <footer>
+            <p>Feel free to reach out to me for any inquiries, collaborations, or opportunities. I look forward to connecting with you! Find Me on</p>
+            <ul>
+                <li><a href="https://www.linkedin.com/in/brandon-huntley-36227b21a/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank">LinkedIn</a></li>
+                <li><a href="https://github.com/ChubbyDiddy" target="_blank">GitHub</a></li>
+                <li><a href="https://www.instagram.com/chubbydiddy/" target="_blank">Instagram</a></li>
+            </ul>
+            <p>© 2026 Brandon Huntley. All rights reserved.</p>
+        </footer>  
+    </body>
+</html>
